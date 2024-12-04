@@ -1,0 +1,32 @@
+#magazine {
+  display: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .page {
+    top: 0;
+    left: 0;
+    margin: 0;
+    border: none;
+    page-break-after: always;
+
+    & .copy p {
+      padding-top: 80px;
+      padding-left: 200px;
+    }
+
+    & .even {
+      right: 30px;
+    }
+
+    & .odd {
+      left: 30px;
+    }
+
+    & .image {
+      background: transparent;
+    }
+  }
+}

@@ -1,131 +1,16 @@
+@page {
+  margin: 0mm;
+  size: var(--og-page-width) var(--og-page-height);
+}
+
 @media print {
+  body > *:not(#magazine) {
+    display: none;
+  }
 
-    body > *:not(#magazine) {
-        display: none;
-    }
-
-    #magazine {
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-
-    @page {
-    padding: 0.5in;
-    size: 9in 9in;
-    /* background: rgb(240, 239, 237); */
-
-
-}
-
-
-#magazine .page {
-    /* background: rgb(244, 209, 209); */
-    width: 8in;
-    height: 8in;
-    /* margin-bottom: 20px; */
-    top: 0;
-    left: 0;
-    border: none;
-    position: relative;
-    box-sizing: border-box;
-    page-break-after: always;
-}
-
-
-.artist-cover {
-    font-size: 14px;
-    transform: rotate(90deg);
-    display: inline-block;
-    position: absolute;
-    width: 200px;
-    background: red;
-}
-
-.copy {
-    /* background: red; */
-    /* padding: 20px; */
-    box-sizing: border-box;
-
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-
-}
-
-.text-border {
-    float: right;
-    /* background: blue; */
-    width: 100%;
-    height: 100%;
-    /* position: absolute; */
-    /* top: -100px; */
-    shape-margin: 20px;
-
-    /* display: none; */
-}
-
-.copy p {
-    /* text-align: justify; */
-    font-size: 10pt;
-    font-family: 'writer';
-    /* box-sizing: border-box; */
-    width: 60%;
-    height: 60%;
-    word-wrap: break-word; 
-    display: block;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    white-space: pre-wrap;
-    margin: 0;
-    padding-top: 80px;
-    padding-left: 200px;
-    /* background: blue; */
-    position: relative;
-    /* top: 100px; */
-}
-
-.pageNumber {
-    font-size: 14pt;
-    /* background: blue; */
-    position: absolute;
-    top: 50%;
-}
-
-.even {
-   right: 30px;
-}
-
-.odd {
-    left: 30px;
-}
-
-.image {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: transparent;
-
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-
-}
-.comment {
-    font-size: 14pt;
-}
-
-.art-title {
-    font-size: 84pt;
-    line-height: 80pt;
-}
-
-.logo {
-    width: 130%;
-    mix-blend-mode: multiply;
-    position: absolute;
-    top: -8%;
-    left: -8%;
-}
-
+  #magazine {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

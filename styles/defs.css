@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "writer";
+  src: url("../fonts/PPWriter-BookText.otf");
+}
+
+@font-face {
+  font-family: "massimo";
+  src: url("../fonts/massimo-grafia_regular.otf");
+}
+
+@font-face {
+  font-family: "massimo light";
+  src: url("../fonts/massimo-grafia_light.otf");
+}
+
+:root {
+  --og-page-width: 8in;
+  --og-page-height: 8in;
+  --og-copy-font-size: 10pt;
+  --og-page-number-size: 14pt;
+  --og-coment-font-size: 14pt;
+  --og-header-font-size: 84pt;
+  --og-header-line-height: 80pt;
+  --og-shape-margin: 20px;
+}
+
+#preview-cont {
+  --page-width: calc(var(--og-page-width) / 2);
+  --page-height: calc(var(--og-page-height) / 2);
+  --copy-font-size: calc(var(--og-copy-font-size) / 2);
+  --page-number-size: calc(var(--og-page-number-size) / 2);
+  --coment-font-size: calc(var(--og-coment-font-size) / 2);
+  --header-font-size: calc(var(--og-header-font-size) / 2);
+  --header-line-height: calc(var(--og-header-line-height) / 2);
+  --shape-margin: calc(var(--og-shape-margin) / 2);
+}
+
+#magazine {
+  --page-width: var(--og-page-width);
+  --page-height: var(--og-page-height);
+  --copy-font-size: var(--og-copy-font-size);
+  --page-number-size: var(--og-page-number-size);
+  --coment-font-size: var(--og-coment-font-size);
+  --header-font-size: var(--og-header-font-size);
+  --header-line-height: var(--og-header-line-height);
+  --shape-margin: var(--og-shape-margin);
+}

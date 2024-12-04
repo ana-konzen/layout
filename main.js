@@ -4,8 +4,10 @@ import { processData } from "./scripts/data.js";
 
 import { Layout, totalPageCount } from "./scripts/layout.js";
 
+import { addTOC } from "./scripts/toc.js";
+
 const savedJSON = localStorage.getItem("savedData") || "[]";
-localStorage.setItem("oldData", JSON.stringify(savedJSON));
+localStorage.setItem("oldData", savedJSON);
 const savedSections = JSON.parse(savedJSON);
 
 export const sections = {};
@@ -47,6 +49,7 @@ const sketch = (p) => {
         });
       }
       updateImages(p);
+      addTOC(sections, p);
     });
   };
 };
@@ -58,7 +61,6 @@ function updateImages(p = p5.instance) {
     const dp = savedSections[section];
     dp.pages.forEach((page, index) => {
       p.select(`.image-${dp.id}-${index}`)?.style("background-image", `url(${page.params.image})`);
-      console.log(sections[section]);
       sections[section].pages[index].params.image = page.params.image;
     });
   }
@@ -89,6 +91,7 @@ async function updateArtists(p, layout, dp, id) {
   };
   sections[id] = {
     art: dp.art,
+    artist: dp.artist,
     id: id,
     images: dp.images,
     params,

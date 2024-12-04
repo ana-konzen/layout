@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  /* background: rgb(244, 209, 209); */
+  background: rgb(240, 239, 237);
+  width: var(--page-width);
+  height: var(--page-height);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.cover,
+.last {
+  background: rgb(126, 117, 99);
+}
+
+.last {
+  order: 1;
+}
+
+.toc div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.toc div div {
+  margin-bottom: 2%;
+  font-family: writer;
+  font-size: var(--coment-font-size);
+}
+
+.toc-artists {
+  padding-right: 2%;
+  text-align: right;
+}
+
+.toc-pages {
+  padding-left: 2%;
+}
+
+.logo {
+  width: 140%;
+  bottom: -20%;
+  mix-blend-mode: multiply;
+  position: absolute;
+}
+
+.cover .logo {
+  left: -70%;
+}
+
+.last .logo {
+  left: 45%;
+}
+
+.left {
+  border-right: solid black 1px;
+}
+
+#artistsCont {
+  position: fixed;
+  right: 10px;
+  top: 200px;
+}
+
+.copy {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.text-border {
+  float: right;
+  width: 100%;
+  height: 100%;
+  shape-margin: var(--shape-margin);
+}
+
+.copy p {
+  font-size: var(--copy-font-size);
+  color: rgb(21, 21, 21);
+  font-family: "writer";
+  width: 60%;
+  height: 60%;
+  word-wrap: break-word;
+  display: block;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  white-space: pre-wrap;
+  position: relative;
+  margin: 0;
+}
+
+.pageNumber {
+  font-size: var(--page-number-size);
+  color: rgb(21, 21, 21);
+  position: absolute;
+  font-family: "massimo light";
+  top: 50%;
+}
+
+.comment {
+  position: absolute;
+  font-family: "writer";
+  font-size: var(--coment-font-size);
+  color: rgb(240, 239, 237);
+  top: -2px;
+  width: 98%;
+  left: 2%;
+  text-align: left;
+}
+
+.art-title {
+  font-family: "massimo";
+  font-size: var(--header-font-size);
+  line-height: var(--header-line-height);
+  position: absolute;
+  height: 100%;
+  width: 98%;
+  left: 0px;
+  top: 0px;
+
+  font-feature-settings: "kern" 1;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  hyphens: auto;
+  text-align: right;
+  color: rgb(240, 239, 237);
+}
+
+.first-page {
+  background: #2b2a27;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.last-page {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first-page2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+}

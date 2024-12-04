@@ -1,0 +1,40 @@
+#preview-cont {
+  position: fixed;
+  background: gray;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  top: 50px;
+  left: 50px;
+  width: 800px;
+  height: 800px;
+  box-sizing: border-box;
+
+  & .cover {
+    margin-left: 4in;
+    margin-top: 20px;
+  }
+
+  & .page {
+    margin-bottom: 20px;
+    border: solid black 1px;
+
+    & .even {
+      right: 15px;
+    }
+
+    & .odd {
+      left: 15px;
+    }
+
+    & .copy p {
+      padding-top: 40px;
+      padding-left: 100px;
+    }
+
+    & .image {
+      background: rgb(217, 217, 217);
+    }
+  }
+}

@@ -81,7 +81,6 @@ export class Layout {
   appendToDOM(page) {
     const siblings = this.p.selectAll(`.${this.artist}`);
     page.addClass(this.artist);
-    // console.log(siblings);
     if (siblings.length === 0) {
       page.parent("preview-cont");
       console.warn(`No siblings found for artist ${this.artist}.`);

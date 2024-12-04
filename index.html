@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Layout</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/print.css"/>
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Layout</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <link rel="stylesheet" href="styles/defs.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/preview.css">
+    <link rel="stylesheet" href="styles/magazine.css">
+    <link rel="stylesheet" href="styles/print.css">
+</head>
 
-    </head>
-    <body>
-
-      
+<body>
     <div id="preview-cont">
         <div class="cover page"><img class="logo" src="/images/issue1/cover/logo.png"></div>
+        <div class="toc page">
+            <div class="toc-artists">
+                <div>hi</div>
+                <div>hi</div>
+                <div>hi</div>
+                <div>hi</div>
+            </div>
+        </div>
+        <div class="toc page">
+            <div class="toc-pages">
+                <div>hi</div>
+                <div>hi</div>
+                <div>hi</div>
+                <div>hi</div>
+            </div>
+        </div>
         <div class="last page"><img class="logo" src="/images/issue1/cover/logo.png"></div>
     </div>
 
-    <div id="magazine"><div class="cover page">cover</div></div>
-       
-        <script type="module" src="main.js"></script>
-    </body>
+    <div id="magazine"></div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
 </html>
