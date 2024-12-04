@@ -1,0 +1,45 @@
+@page {
+    background: blue;
+    margin: 0;
+  }
+  
+  body * {
+    visibility: hidden;
+  }
+  
+  #magazine {
+    display: block;
+    height: auto;
+    width: auto;
+  }
+  
+  #magazine, #magazine * {
+    visibility: visible;
+    overflow: visible !important; 
+    float: none !important; 
+  }
+  
+  
+  .page {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  .spread{
+    break-before: page;
+    page-break-before: always;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .first {
+    break-before: auto;
+    page-break-before: auto;
+  }
+  
+
+
+
+
+
+   

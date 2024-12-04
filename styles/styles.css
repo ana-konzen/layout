@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'writer';
+    src: url('fonts/PPWriter-BookText.otf');
+}
+
+@font-face {
+    font-family: 'massimo';
+    src: url('fonts/massimo-grafia_regular.otf');
+}
+
+@font-face {
+    font-family: 'massimo light';
+    src: url('fonts/massimo-grafia_light.otf');
+}
+
+#preview-cont {
+    position: fixed;
+    background: gray;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 50px;
+    left: 50px;
+    width: 800px;
+    height: 800px;
+    
+}
+
+
+#preview-cont .cover {
+    margin-left: 4in;
+    margin-top: 20px;
+
+}
+
+
+
+#magazine {
+    display: none;
+}
+
+.first {
+    width: 4in;
+}
+
+.page {
+    /* background: rgb(244, 209, 209); */
+    background: rgb(240, 239, 237);
+    width: 4in;
+    height: 4in;
+    margin-bottom: 20px;
+    position: relative;
+    border: solid black 1px;
+    box-sizing: border-box;
+}
+
+.left {
+    border-right: solid black 1px;
+}
+
+#artistsCont {
+    position: fixed; 
+    right: 10px;
+    top: 200px;
+}
+
+
+
+
+.copy {
+    /* background: red; */
+    /* padding: 20px; */
+    box-sizing: border-box;
+
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.text-border {
+    float: right;
+    /* background: blue; */
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    /* top: -100px; */
+    shape-margin: 10px;
+
+    /* display: none; */
+}
+
+.copy p {
+    /* text-align: justify; */
+    font-size: 5pt;
+    color: rgb(21, 21, 21);
+    font-family: 'writer';
+    /* box-sizing: border-box; */
+    width: 60%;
+    height: 60%;
+    word-wrap: break-word; 
+    display: block;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    white-space: pre-wrap;
+    margin: 0;
+    padding-top: 40px;
+    padding-left: 100px;
+    /* background: blue; */
+    position: relative;
+    /* top: 100px; */
+}
+
+.pageNumber {
+    font-size: 7pt;
+    color: rgb(21, 21, 21);
+    /* background: blue; */
+    position: absolute;
+    font-family: 'massimo light';
+
+    /* font-family: 'writer'; */
+    top: 50%;
+}
+
+.comment {
+    position: absolute;
+    font-family: 'writer';
+    font-size: 7pt;
+    color: rgb(240, 239, 237);
+    top: -2px;
+    /* background: blue; */
+    width: 98%;
+    left: 2%;
+    text-align: left;
+
+}
+
+.art-title {
+    font-family: 'massimo';
+    font-size: 42pt;
+    position: absolute;
+    /* background: blue; */
+    height: 100%;
+    width: 98%;
+    left: 0px;
+    top: 0px;
+    line-height: 40pt;
+    font-feature-settings: "kern" 1;
+    /* text-transform: lowercase; */
+    text-transform: uppercase;
+
+    /* letter-spacing: -1px; */
+    word-wrap: break-word; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+
+
+
+
+    /* overflow-wrap: break-word; */
+    hyphens: auto;
+    text-align: right;
+    color: rgb(240, 239, 237);
+}
+
+.first-page {
+    background: #2b2a27;
+}
+
+.even {
+   right: 15px;
+}
+
+.odd {
+    left: 15px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(217, 217, 217);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.last-page {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first-page2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .image.vertical {
+    background-size: 4in auto;
+}
+
+.image.horizontal {
+    background-size: auto 4in;
+} */
