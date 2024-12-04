@@ -120,4 +120,12 @@
     line-height: 80pt;
 }
 
+.logo {
+    width: 130%;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: -8%;
+    left: -8%;
+}
+
 }

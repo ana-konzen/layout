@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'writer';
-    src: url('fonts/PPWriter-BookText.otf');
+    src: url('../fonts/PPWriter-BookText.otf');
 }
 
 @font-face {
     font-family: 'massimo';
-    src: url('fonts/massimo-grafia_regular.otf');
+    src: url('../fonts/massimo-grafia_regular.otf');
 }
 
 @font-face {
     font-family: 'massimo light';
-    src: url('fonts/massimo-grafia_light.otf');
+    src: url('../fonts/massimo-grafia_light.otf');
 }
 
 #preview-cont {
@@ -36,6 +36,7 @@
 
 
 
+
 #magazine {
     display: none;
 }
@@ -54,6 +55,30 @@
     border: solid black 1px;
     box-sizing: border-box;
 }
+
+.cover, .last {
+    background: rgb(126, 117, 99);
+}
+
+.last {
+    order: 1;
+}
+
+.logo {
+    width: 140%;
+    bottom: -20%;
+    mix-blend-mode: multiply;
+    position: absolute;
+}
+
+.cover .logo {
+    left: -70%;
+}
+
+.last .logo {
+    left: 45%;
+}
+
 
 .left {
     border-right: solid black 1px;

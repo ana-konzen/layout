@@ -31,6 +31,7 @@ export class Layout {
   }
 
   addFirstPages() {
+    this.indexPage = totalPageCount + 1;
     totalPageCount += 2;
     const page = this.p.createDiv();
     page.addClass("page");
@@ -93,7 +94,7 @@ export class Layout {
   create() {
     this.addFirstPages();
     this.addCopy();
-    if (this.pageCount % 2 === 0) {
+    if (this.pageCount % 2 !== 0) {
       this.addLastPage();
     }
   }
