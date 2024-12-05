@@ -18,11 +18,11 @@ export async function processData() {
     const imagePaths = [];
     const fileName = dp.art.replace(/\s/g, "-").toLowerCase();
     for (let i = 0; i < dp.numImages; i++) {
-      imagePaths.push(`images/${"issue1"}/art/${fileName}/${i + 1}.png`);
+      imagePaths.push(`images/${"issue1"}/${fileName}/${i + 1}.png`);
     }
     dp.images = imagePaths;
-    dp.lastImage = `images/${"issue1"}/art/${fileName}/last.png`;
-    dp.firstImage = `images/${"issue1"}/art/${fileName}/first.png`;
+    dp.lastImage = `images/${"issue1"}/${fileName}/last.png`;
+    dp.firstImage = `images/${"issue1"}/${fileName}/first.png`;
     dp.id = `art${index}`;
   });
   console.log(data);

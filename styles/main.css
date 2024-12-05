@@ -25,21 +25,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  top: 2%;
 }
 
 .toc div div {
   margin-bottom: 2%;
-  font-family: writer;
   font-size: var(--coment-font-size);
 }
 
 .toc-artists {
-  padding-right: 2%;
+  padding-right: 3%;
+  font-family: writer;
   text-align: right;
 }
 
 .toc-pages {
-  padding-left: 2%;
+  padding-left: 3%;
+  font-family: writer;
 }
 
 .logo {
@@ -125,7 +128,6 @@ body {
   width: 98%;
   left: 0px;
   top: 0px;
-
   font-feature-settings: "kern" 1;
   text-transform: uppercase;
   word-wrap: break-word;
@@ -146,7 +148,7 @@ body {
   height: 100%;
   position: absolute;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: var(--page-width);
 }
 
 .last-page {
